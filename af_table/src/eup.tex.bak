@@ -1,0 +1,25 @@
+$\mathrm{ch}_{a,n}$&
+$\begin {array}{c}
+\left[-\frac{n}{a-1},\frac{n}{a-1}\right]\\\\
+\int\limits_{-n/(a-1)}^{n/(a-1)}\!\!\!\!\!\!\mathrm{ch}_{a,n}(x)=1
+\end {array}$ &
+$\begin {array}{c}
+y^{(n)}(x)=a^{n+1}2^{-n}\sum\limits_{k=0}^nC_n^k(-1)^ky(ax+n-2k)\\
+\widehat{\mathrm{ch}_{a,n}}(t)=\prod\limits_{k=1}^{\infty}{\sinc^n\left(\frac{t}{a^{k}}\right)}\\
+\mathrm{ch}_{a,n}(x)=\frac{a-1}{n}\left(\frac{1}{2}+\sum\limits_{k=1}^{\infty}\widehat{\mathrm {ch}_{a,n}}\!\left(\rule{0pt}{10pt}\frac{a-1}{n}\pi k\right)\cos\!\left(\rule{0pt}{10pt}\frac{a-1}{n}\pi kx\right)\right)
+\end{array}$
+&
+$\begin {array}{c}
+\mathrm{ch}_{a,n}=\underbrace{{\mathrm h}_a*\dots*{\mathrm h}_a}_n\\
+\mathrm{ch}_{2,1}(x)=\up(x)\\
+\mathrm{ch}_{2,2}(x)=\mathrm{cup}(x)\\
+\mathrm{ch}_{a,1}(x)=\mathrm{h}_a\\
+\mathrm{ch}_{n+1,n}(x)=\mathrm{\Xi}_n\\
+\end{array}$
+& w e
+
+%$\up(x)=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}e^{itx}\prod\limits_{k=1}^{\infty}\frac{\sin(t\,2^{-k})}{t\,2^{-k}}dt$\\
+
+%$\widehat{\up}(t)=\prod\limits_{k=1}^{\infty}\frac{\sin(t\,2^{-k})}{t\,2^{-k}}=\prod\limits_{k=1}^{\infty}{\sinc(t\,2^{-k})}=\prod\limits_{m=1}^{\infty}{\cos^m(t\,2^{-m-1})}$  Книга про антенны стр 37.\quad $\sinc(x)=\prod\limits_{k=1}^{\infty}\cos(2^{-k}x)$ зеленая кн. стр 23\\
+%Тогда $\up(x)=\frac{1}{2}+\sum\limits_{k=1}^{\infty}\widehat{\up}(\pi k)\cos(\pi k x)=\frac{1}{2}+\sum\limits_{k=1}^{\infty}\left(\left(\prod\limits_{m=1}^{\infty}{\cos^m(\frac{\pi k}{2^{m+1}})}\right)\cos(\pi k x)\right)$.
+

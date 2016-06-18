@@ -1,0 +1,162 @@
+\documentclass[12pt,landscape]{article}   %12pt
+\usepackage{graphicx}
+%\usepackage[dvips]{graphicx}
+\usepackage[dvips,paperwidth=28.5cm,paperheight=20.5cm,width=25cm,height=18cm,centering]{geometry}
+%\usepackage[dvips,landscape]{geometry}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+%\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsopn}              %need for declaration of functions
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\shc}{shc}
+\DeclareMathOperator{\up}{up}
+\DeclareMathOperator{\afcup}{cup}
+\DeclareMathOperator{\fup}{fup}
+\DeclareMathOperator{\eup}{eup}
+\DeclareMathOperator{\g}{g}
+\DeclareMathOperator{\Fup}{Fup}
+\DeclareMathOperator{\HilbergsHut}{hut}
+\DeclareMathOperator{\supp}{supp}
+\textwidth=25cm
+\textheight=18cm
+\topmargin=-1cm
+\renewcommand{\arraystretch}{1.5}
+\pagestyle{myheadings} \markboth{af}{Атомарные функции и их свойства \quad Версия от: \today}
+
+
+\def\daterussian{% fix for iюня and iюля
+  \def\today{\number\day~\ifcase\month\or
+   \cyrya\cyrn\cyrv\cyra\cyrr\cyrya\or
+   \cyrf\cyre\cyrv\cyrr\cyra\cyrl\cyrya\or
+   \cyrm\cyra\cyrr\cyrt\cyra\or
+   \cyra\cyrp\cyrr\cyre\cyrl\cyrya\or
+   \cyrm\cyra\cyrya\or
+   \cyri\cyryu\cyrn\cyrya\or
+   \cyri\cyryu\cyrl\cyrya\or
+   \cyra\cyrv\cyrg\cyru\cyrs\cyrt\cyra\or
+   \cyrs\cyre\cyrn\cyrt\cyrya\cyrb\cyrr\cyrya\or
+   \cyro\cyrk\cyrt\cyrya\cyrb\cyrr\cyrya\or
+   \cyrn\cyro\cyrya\cyrb\cyrr\cyrya\or
+   \cyrd\cyre\cyrk\cyra\cyrb\cyrr\cyrya\fi
+   \space \number\year~\cyrg.}}
+
+% Imaginary Unit   
+\newcommand*{\I}{\imath}%
+\renewcommand*{\Re}{\mathrm{Re}}%
+\renewcommand*{\Im}{\mathrm{Im}}%
+
+%\usepackage{array}   
+%\def\input@path{{src/}}
+
+\begin{document}
+
+
+
+\begin{center}
+\begin{longtable}{|c|c|c|c|c|}
+
+%\caption[Feasible triples for a highly variable Grid]{Feasible triples for highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\hline
+АФ&
+$\begin{array}{c}
+\supp\\
+\text{нормировка}
+\end{array}$&$\begin{array}{c}
+\text{Уравнение}\\
+\text{преобразование Фурье}\\
+\text{ряд Фурье}\\
+\text{Разложение}\\
+\end{array}$&Связь с другими АФ&Ссылки
+\\
+\hline
+\endfirsthead
+
+\hline
+АФ&
+Нормировка
+&
+ФДУ\quad ряд Фурье\quad Разложение&Связь с другими АФ&Ссылки
+\\
+\hline
+\endhead
+
+\hline %\multicolumn{5}{|c|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline
+\endlastfoot
+\input{src/up.tex}
+\tabularnewline
+\hline
+\input{src/fup_n.tex}
+\tabularnewline
+\hline
+\input{src/up_m.tex}
+\tabularnewline
+\hline
+\input{src/pi_m.tex}
+\tabularnewline
+\hline
+\input{src/cup.tex}
+\tabularnewline
+\hline
+\input{src/h_a.tex}
+\tabularnewline
+\hline
+\input{src/xi_n.tex}
+\tabularnewline
+\hline
+\input{src/ch_a_n.tex}
+\tabularnewline
+\hline
+\input{src/eup.tex}
+\tabularnewline
+\hline
+\input{src/gkh.tex}
+\tabularnewline
+\hline
+\multicolumn{5}{|c|}{{Функции, используемые при построении атомарных}} %\\ \hline
+%\multicolumn{2}{|c|}{qwerty} & $mmm$ & q & w e
+\input{src/impulse.tex}
+\input{src/b-spline.tex}
+\tabularnewline
+\hline
+\end{longtable}
+\end{center}
+
+
+%\includegraphics[scale=0.16]{3-2-1_bw_c.ps}\qquad\qquad
+%%\includegraphics[scale=0.16]{2-4-4_bw_c.ps}\\
+
+\begin{thebibliography}{99}
+\bibitem{KVF2003} Kravchenko, V.F. Lectures on the Theory of Atomic Functions and Their Applications, Moscow, Radiotechnika, 2003 (in Russian).
+%\bibitem{Kravchenko_Perez-Meana_Ponomaryov2009} Kravchenko, V.F., Perez-Meana, H.M., and Ponomaryov, V.I. Adaptive Digital Processing of Multidimensional Signals with Applications, Moscow, FIZMATLIT, 2009.
+%\bibitem{my1}Konovalov, Y.Y. Fast computation of atomic fuctions based on selfsimilar sequenses. Proceedings of 12th International Conference and Exhibition on Digital Signal Processing and its Applications DSPA-2010, Moscow, Russia, p.~134-136.
+\bibitem{disser_starec} Старец Г.А. 
+    Один класс атомарных функций и его применение. Диссертация на соискание ученой степени кандидата физ.-мат. наук. Харьков, ХГУ, 1984.
+
+\bibitem{ncls} Рвачев В.Л., Рвачев В.В. 
+    Неклассические методы теории приближений в краевых задачах. Киев, ''Наукова Думка'', 1979.
+    
+\bibitem{Gor94} Горшков А.С., Кравченко В.Ф., Рвачев В.Л.
+    Атомарные гармонические функции и обобщенный алгоритм БПФ // ДАН РАН, 1994, 336 (4), 462--465.    
+
+\bibitem{Got99} Gotovac Blaz, and Kozulic Vedrana.
+    On a selection of Basis Functions in Numerical Analyses of Engineering Problems //
+    International Journal for Engineering Modelling (1330--1365) 12 (1999), 1--4; 25--41
+%
+%
+%\bibitem{Kravchenko-Rvachev2006}	Kravchenko, V.F. and Rvachov, V.L., Boolean algebra, atomic function and wavelet in physical applications, Fizmatlit, Moscow, 2006 (in Russian).
+%
+%\bibitem{kvf1}	Kravchenko, V.F., O.S.Labun'ko, A.M., Lerer, and Sinyavsky, G.P., Computing methods in the modern radio physics. Edited by V.F. Kravchenko, Fizmatlit, Moscow, 2009 (in Russian).
+%
+%\bibitem{kvf2}	Kravchenko V.F., Perez-Meana H.M., Ponomaryov V.I. Adaptive digital processing of multidimensional signals with applications. Moscow, FIZMATLIT, 2009.
+\end{thebibliography}
+\end{document}
+
+
+
+

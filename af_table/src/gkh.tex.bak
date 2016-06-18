@@ -1,0 +1,20 @@
+$\begin{array}{c}
+\g_{k,h}\\\\ (y_{\omega,h})
+\end{array}$&
+$\begin{array}{c}
+\left[-1,\,1\right]\\\\
+\int\limits_{-1}^{1} \mathrm{\g}_{k,h}(x)=1
+\end{array}$ &
+$\begin{array}{c}
+y'(x) - \ln{(a)}\,y(x) = \dfrac{\ln{(a)}}{a-1}(y(2x+1)-a y(2x-1))\\[6pt]
+\widehat{\mathrm{eup}_{a}}(t)=\prod\limits_{k=1}^{\infty}{\biggl(\dfrac{\shc(\ln(a)/2-\I\,t\,2^{-k})}{\shc(\ln(a)/2)}\biggr)}\\[6pt]
+\mathrm{eup}_{a}(x)=\dfrac{1}{2}+\sum\limits_{k=1}^{\infty}\Re(\widehat{\mathrm{eup}_{a}}(k\pi))\cos(k\pi x) - \\
+\Im(\widehat{\mathrm{eup}_{a}}(k\pi))\sin(k\pi x) \\
+\sum\limits_{k\in\mathbb{Z}}a^k\,\eup_a(x-k) \equiv a^x \eup_a(0)
+\end{array}$
+&
+q
+&
+\begin{tabular}{c}
+w e \\ \cite{ncls}\\ \cite{Gor94}
+\end{tabular}
