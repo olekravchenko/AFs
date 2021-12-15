@@ -1,4 +1,4 @@
-\documentclass[12pt,landscape]{article}   %12pt
+\documentclass[11pt,landscape]{article}   %12pt
 \usepackage{graphicx}
 %\usepackage[dvips]{graphicx}
 \usepackage[dvips,paperwidth=28.5cm,paperheight=20.5cm,width=25cm,height=18cm,centering]{geometry}
@@ -15,9 +15,13 @@
 \DeclareMathOperator{\up}{up}
 \DeclareMathOperator{\afcup}{cup}
 \DeclareMathOperator{\fup}{fup}
+\DeclareMathOperator{\Fup}{Fup}
+\DeclareMathOperator{\fp}{fp}
+\DeclareMathOperator{\ha}{h_a}
+\DeclareMathOperator{\fip}{fip}
+\DeclareMathOperator{\mup}{mup}
 \DeclareMathOperator{\eup}{eup}
 \DeclareMathOperator{\g}{g}
-\DeclareMathOperator{\Fup}{Fup}
 \DeclareMathOperator{\HilbergsHut}{hut}
 \DeclareMathOperator{\supp}{supp}
 \textwidth=25cm
@@ -91,10 +95,19 @@ $\begin{array}{c}
 \input{src/up.tex}
 \tabularnewline
 \hline
+\input{src/Fup_n_basis.tex}
+\tabularnewline
+\hline
 \input{src/fup_n.tex}
 \tabularnewline
 \hline
 \input{src/up_m.tex}
+\tabularnewline
+\hline
+\input{src/Fupm_n_basis.tex}
+\tabularnewline
+\hline
+\input{src/fp_mn.tex}
 \tabularnewline
 \hline
 \input{src/pi_m.tex}
@@ -104,6 +117,9 @@ $\begin{array}{c}
 \tabularnewline
 \hline
 \input{src/h_a.tex}
+\tabularnewline
+\hline
+\input{src/fip_a_n.tex}
 \tabularnewline
 \hline
 \input{src/xi_n.tex}
@@ -147,6 +163,16 @@ $\begin{array}{c}
 \bibitem{Got99} Gotovac Blaz, and Kozulic Vedrana.
     On a selection of Basis Functions in Numerical Analyses of Engineering Problems //
     International Journal for Engineering Modelling (1330--1365) 12 (1999), 1--4; 25--41
+    
+\bibitem{Ba08} Басараб М.А., Кравченко В.Ф., Матвеев В.А.
+	Методы моделирования и цифровая обработка сигналов в гироскопии.
+	Москва, ФИЗМАТЛИТ, 2008.
+
+\bibitem{Br18} Brysina I.V., Makarichev V.O.
+	Generalized atomic wavelets //
+	Radioelectronic and Computer Systems 1 (2018), 23--31
+
+    
 %
 %
 %\bibitem{Kravchenko-Rvachev2006}	Kravchenko, V.F. and Rvachov, V.L., Boolean algebra, atomic function and wavelet in physical applications, Fizmatlit, Moscow, 2006 (in Russian).
