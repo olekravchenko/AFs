@@ -1,0 +1,18 @@
+% test eup_a(x)
+clc; clearvars; close all;
+
+%% Parameters
+npts = 2^20;
+xL = -1.2; xR = -xL;
+x = linspace(xL,xR,npts);
+% a = exp(1);                     % exp(1) ~= 2.718281828459046
+y_05 = eupa(0.5,x,100,10);
+y_15 = eupa(1.0,x,100,10);
+
+%%
+figure('color','w');
+LW = 'LineWidth'; lw = 1.25;
+plot(x,real(y),x,imag(y),LW,lw);
+axis tight; axis square; ylim([-0.25 1.25]);
+xlabel('x'); %ylabel('eup_{a}(x)');
+title(['eup_{' num2str(a) '}(x)']);
