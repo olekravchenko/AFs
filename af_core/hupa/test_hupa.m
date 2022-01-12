@@ -1,14 +1,14 @@
 % test hupa
-clc; clear all;close all;
+clc; clearvars; close all;
 
-N = 2^12;
-x0 = 2;
-x = -x0 : 2*x0 / (N-1) : x0;
+npts = 2^8;
+xL = -2.5; xR = -xL;
+x = linspace(xL, xR, npts);
 
-a = exp(1);                     % exp(1) ~= 2.718281828459046
+a = 1.2;                     % exp(1) ~= 2.718281828459046
 % a = 2;
-m = 20;
-n = 20;
+m = 100;
+n = 10;
 y = hupa(x,a,m,n);
 % y1 = diff(y)/max(diff(y));
 % y2 = diff(y1)/max(diff(y1));
