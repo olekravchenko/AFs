@@ -1,0 +1,43 @@
+clc;
+close all;
+
+x=-1:0.01:1;
+fig=figure;
+plot(x,eup_a(x, exp(1)),'k-','LineWidth',2); grid;
+xlabel('x'); ylabel('eup(x)'); 
+title('eup function');
+xlim([min(x) max(x)]);
+
+fig=figure;
+plot(x,eup_a(x, 5),'k-','LineWidth',2); grid;
+xlabel('x'); ylabel('eup_5(x)'); 
+title('eup_5 function');
+xlim([min(x) max(x)]);
+
+x=-2:0.01:2;
+fig=figure;
+plot(x,eup_a(x, 5),'k-','LineWidth',2); grid;
+xlabel('x'); ylabel('eup_5(x)'); 
+title('eup_5 function');
+xlim([min(x) max(x)]);
+
+
+
+load Wav_h3_0_01
+fig=figure;
+plot(Wav_x,real(Wav),'k-',Wav_x,imag(Wav),'k--','LineWidth',2); grid;
+xlabel('t'); ylabel('\psi(t)'); 
+title('h_3^2-wavelet');
+xlim([min(Wav_x) max(Wav_x)]);
+
+load Wav_up2_0_01
+fig=figure;
+plot(Wav_x,real(Wav),'k-',Wav_x,imag(Wav),'k--','LineWidth',2); grid;
+xlabel('t'); ylabel('\psi(t)'); 
+title('up_2^2-wavelet');
+xlim([min(Wav_x) max(Wav_x)]);
+saveas(h,'W_up_2_2.bmp');
+
+
+
+
